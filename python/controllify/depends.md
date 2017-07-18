@@ -1,5 +1,7 @@
+Code is currently only ported to Windows (keyboard.py is Windows dependent).
+
 Hardware Interface:
-- Arduino (version TBD)
+- Arduino
 
 Controllify Server:
 - Python 2.7.13
