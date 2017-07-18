@@ -21,10 +21,12 @@ Please note that for most of the functionality of this application, the keyboard
 called by Controllify must correspond to those defined in Toastify. The Toastify hotkeys are
 defined below (or they can be changed in keyboard.py):
 
-* Play / Pause     =     Ctrl-Alt-Up
-* Next Track       =     Ctrl-Alt-Right
-* Previous Track   =     Ctrl-Alt-Left
-* Show / Hide      =     Ctrl-Alt-Down
-* Mute             =     Ctrl-Alt-F10
-* Volume Down      =     Ctrl-Alt-F11
-* Volume Up        =     Ctrl-Alt-F12
+| Action         | Shortcut       |
+|----------------|----------------|
+| Play / Pause   | Ctrl-Alt-Up    |
+| Next Track     | Ctrl-Alt-Right |
+| Previous Track | Ctrl-Alt-Left  |
+| Show / Hide    | Ctrl-Alt-Down  |
+| Mute           | Ctrl-Alt-F10   |
+| Volume Down    | Ctrl-Alt-F11   |
+| Volume Up      | Ctrl-Alt-F12   |
