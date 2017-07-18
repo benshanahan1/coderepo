@@ -1,9 +1,11 @@
 # Controllify v0.1
 Benjamin Shanahan, 6 January 2017.
 
-Run Controllify.bat and TX Emulator. COM 4 and COM 5 should be linked via COM port emulator utility.
+Controllify is a server that responds to incoming COM port commands (listed below). The server then interacts directly with the Spotify application on the user's computer in order to skip songs, change volume, etc. The original concept for Controllify was that it would be used in conjunction with a physical switchbox (with an Arduino inside) that sends commands to a set COM port.
 
-Inside of the emulator, try the following commands:
+Before getting started, please check that you have installed all dependencies (depends.md).
+
+To run Controllify virtually (without switchbox hardware), you need to install a COM port emulator (i.e. com0com) and emulate/link COM ports 4 and 5. Once done, launch the Controllify server (Controllify.bat) and the TX emulator (/emulator/launch_tx.bat). Inside of the emulator, try the following commands and if everything is working properly, Spotify should respond:
 
 * play
 * next
@@ -13,7 +15,7 @@ Inside of the emulator, try the following commands:
 * visible
 * mute
 
-Additionally, you can input a Spotify URI (right click a song, playlist, album, etc. within
+Additionally, you can paste a Spotify URI directly into the emulator (right click a song, playlist, album, etc. within
 Spotify Desktop and click Copy Spotify URI). Doing so will play the given track in Spotify 
 Desktop.
 
