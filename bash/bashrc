@@ -119,6 +119,14 @@ fi
 # Color PS1
 export PS1="\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;209m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] @ \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;140m\]\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \t \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;245m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"
 
+update() {
+    sudo apt update
+    sudo apt upgrade
+}
+
+# Force command to expand (if it has an alias)
+alias sudo="sudo "
+
 # Open current directory in file explorer GUI
 alias explorer="xdg-open . &"
 
@@ -139,9 +147,3 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-# custom aliases
-alias mountpi='sshfs -o allow_other pi@raspberrypi:/ /media/pi'
-alias umountpi='umount /media/pi'
-alias mountcarlson='sshfs -o allow_other pi@carlson.local:/ /media/carlson'
-alias umountcarlson='umount /media/carlson'
