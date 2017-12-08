@@ -26,7 +26,6 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
-
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -120,8 +119,8 @@ fi
 export PS1="\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;209m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] @ \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;140m\]\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \t \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;245m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"
 
 update() {
-    sudo apt update
-    sudo apt upgrade
+	sudo apt update
+	sudo apt upgrade
 }
 
 # Force command to expand (if it has an alias)
@@ -147,3 +146,20 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+alias openports='netstat -nape --inet'
+alias matlab='/usr/local/MATLAB/R2017a/bin/matlab'
+alias espadir='cd /home/ben/code/espadev/ESPA'
+
+# cd && git clone https://github.com/JoeriHermans/warpdrive
+source ~/Warpdrive/src/.warpdrive
+
+# Mount BrainGate file system
+MountBG() {
+	sudo mount /media/BG2
+	sudo mount /media/DB
+}
+
+
+
+
